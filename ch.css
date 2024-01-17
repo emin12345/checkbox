@@ -1,0 +1,66 @@
+*{
+
+box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+label{
+
+
+    position: relative;
+    width: 160px;
+    height: 80px;
+}
+
+label input{
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    cursor: pointer;
+}
+
+label span{
+
+    position: absolute;
+    top: 0; left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: red;
+     border-radius: 80px;
+     transition: 0.5s;
+     box-shadow: 0 15px 25px rgb(109, 37, 37);
+}
+
+label input:checked ~ span    {
+    background: green;
+    box-shadow: 0 15px 25p greenyellow;
+}
+
+label span i{
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 72px;
+    height: 72px;
+    background-color: white;
+    border-radius: 50%;
+
+
+}
+
+label input:checked ~ span i    {
+  left: 85px;
+}
